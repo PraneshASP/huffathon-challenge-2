@@ -1,40 +1,58 @@
-# Huff Challenge Creator Template
-Welcome to the Huff Challenge Creator Template! This guide will assist you in setting up your challenge repository.
+# Welcome Players!
 
-#### TODO: Once you're done setting up, delete this file and then rename [PLAYER_README.md](PLAYER_README.md)
- to README.md to replace this one.
+Greetings, Huffoor! This document will guide you through the steps to solve this challenge and register your solution.
 
-## Initial Setup
+## Overview
 
-Create a New Repository - Start by creating a new repository based on this template and consider setting visibility to private if you will be pushing commits while deving.
+_This is where you describe what the challenge is about, for example:_
 
-## Usage
+_"In this challenge you will optimize this contract..."_
 
-1. Update the CREATOR.sol File
-Make the following changes to the CREATOR.sol file:
+_"Write a contract with a function that returns a square root..."_
 
- - **_challengeId**: Update the _challengeId with a unique id number provided by the Huff admin.
+_"Steal all the ETH from this Vault contract with a contract < 100 bytes..."_
 
- - **verify()**: Function: This function should return either true or false based on whether the provided solution is correct. Implement the logic that checks the solution.
- ```solidity
-    function verify(string memory solution) public view returns (bool) {
-         (,bytes memory data) = solution.call("");
-         uint256 answer = abi.decode(data, uint256);
-         return answer == 0x69; // the expected response is 0x69
-    }
- ```
 
- - **gasReport()**: Function: This function should return the gas number for the solution. This could be the measurement of a single function call or multiple calls.
 
-2. Update the PLAYER_SOLUTION.huff File (Optional)
-If your challenge has a base solution (an optimization challenge, for example), you can update the PLAYER_SOLUTION.huff file as necessary.
+## Getting Started
 
-3. Finalize the README
-As a final step, delete or rename the current README.md and then rename PLAYER_README.md to README.md. Update the new README as needed.
+1. **Clone the Repo**: Start by cloning this repository to your local machine.
 
-4. Double-Check Your Work
-Before making the repository public, ensure that you haven't left in any solutions or other unintended hints.
+```bash
+git clone <REPO_URL>
+```
 
-5. Go Public!
-Once you're ready and the challenge has officially begun, change the repository visibility to PUBLIC.
+If you're considering sharing your solution later or want to track your progress with commits, consider forking this repository. However, remember to keep your fork private initially to prevent others from seeing your solution.
 
+2. **Solve the Puzzle**: Dive into the [PLAYER_SOLUTION.huff](src/PLAYER_SOLUTION.huff) file and work your magic to solve the challenge.
+
+3. **Testing**: While solving, you can utilize the test suite [Solution.t.sol](test/Solution.t.sol) to validate your solution. Feel free to make changes to this file; it won't affect the main challenge or your submission. It's just there to assist you.
+
+## Registering Your Solution
+
+Once you're confident in your solution, register it with the HuffCTFRegistry on Optimism mainnet:
+
+1. **Set Up Your Discord Handle**: Before running the registration script, set up an environment variable with your Discord handle (without the '@' symbol):
+
+```bash
+export PLAYER_HANDLE=devtooligan
+```
+
+2. **Run the Registration Script**: Use the following command to run the registration script:
+
+```bash
+forge script script/Solution.s.sol:Register --rpc-url <OPTIMISM RPC URL> --broadcast -vvvv
+```
+
+Note:
+- This command sends a live transaction on Optimism. Replace `<OPTIMISM RPC URL>` with a valid URL.
+- You'll need to use an actual wallet for the transaction. You can specify your wallet using the `--wallet` flag. Alternatively, you can input your private key in other ways, such as by using the `--interactive` flag. See [Foundry documentation](https://book.getfoundry.sh/) for more information.
+
+
+Also note:
+- You can also interact directly with the Optimism [block explorer](https://optimistic.etherscan.io/address/0xf6aE79c0674df852104D214E16AC9c065DAE5896#writeContract). This is not the recommended way due to the danger of human error. If you want to see the exact input parameters you can run the Register script above and DO NOT use a private key.  The arguments will be console.logged for you.
+## Wrapping Up
+
+That's all there is to it! Once the challenge concludes, feel free to make your repository public. If your solution ranks among the top contenders, it will undergo a human review. Stay updated by keeping an eye on our Discord channel and Twitter feed.
+
+Best of luck, and may the best coder win!
