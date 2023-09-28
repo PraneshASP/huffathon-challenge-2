@@ -1,43 +1,60 @@
-// NOTE: This is the SimpleStore.huff sample contract
-// Replace this code with your solution code
+// Solution stub. 
+
 
 /* Interface */
-#define function setValue(uint256) nonpayable returns ()
-#define function getValue() view returns (uint256)
+#define function gate1(uint256) view returns (uint256)
+#define function gate2(uint256) view returns (uint256)
+#define function gate3(uint256) view returns (uint256)
 
 /* Storage Slots */
 #define constant VALUE_LOCATION = FREE_STORAGE_POINTER()
 
+// ADD YOUR LOGIC TO THE BELOW MACROS
+
 /* Methods */
-#define macro SET_VALUE() = takes (0) returns (0) {
-    0x04 calldataload   // [value]
-    [VALUE_LOCATION]    // [ptr, value]
-    sstore              // []
+#define macro GATE1_MACRO() = takes (0) returns (0) {
+    0x04 calldataload   // [input]
+
+    // logic goes here
+      
+    // return output
+    0x00 mstore
+    0x20 0x00 return
 }
 
-#define macro GET_VALUE() = takes (0) returns (0) {
-    // Load value from storage.
-    [VALUE_LOCATION]   // [ptr]
-    sload                // [value]
+#define macro GATE2_MACRO() = takes (0) returns (0) {
+    0x04 calldataload   // [input]
 
-    // Store value in memory.
+    // logic goes here
+      
+    // return output
     0x00 mstore
+    0x20 0x00 return
+}
 
-    // Return value
+#define macro GATE3_MACRO() = takes (0) returns (0) {
+    0x04 calldataload   // [input]
+
+    // logic goes here
+      
+    // return output
+    0x00 mstore
     0x20 0x00 return
 }
 
 #define macro MAIN() = takes (0) returns (0) {
     // Identify which function is being called.
     0x00 calldataload 0xE0 shr
-    dup1 __FUNC_SIG(setValue) eq set jumpi
-    dup1 __FUNC_SIG(getValue) eq get jumpi
+    dup1 __FUNC_SIG(gate1) eq gate1 jumpi
+    dup1 __FUNC_SIG(gate2) eq gate2 jumpi
+    dup1 __FUNC_SIG(gate3) eq gate3 jumpi
 
     0x00 0x00 revert
 
-    set:
-        SET_VALUE()
-    get:
-        GET_VALUE()
-
+    gate1:
+        GATE1_MACRO()
+    gate2:
+        GATE2_MACRO()
+    gate3:
+        GATE3_MACRO()
 }
