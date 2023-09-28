@@ -4,7 +4,7 @@ Greetings, Huffoor! This document will guide you through the steps to solve this
 
 ## Overview
 
-In a world where gods and blockchain intersect, the legend of Ethereum's Lost Temple captivates all. Guarded by three divine gates, the temple's secrets are accessible only to those fluent in Huff, the language symbolized by the celestial horse, Etherion. Your mission is to decipher the hidden mystery logic to uinlock 3 sacred gates and implement them using Huff in the most efficient manner. The adventurer who solves these puzzles with the least etheric essence will unlock the temple's treasures.
+In a world where gods and blockchain intersect, the legend of Ethereum's Lost Temple captivates all. Guarded by three divine gates, the temple's secrets are accessible only to those fluent in Huff, the language symbolized by the celestial horse, Etherion. Your mission is to decipher the hidden mystery logic to unlock 3 sacred gates and implement them using Huff in the most gas-efficient manner. The adventurer who solves these puzzles with the least gas will unlock the temple's treasures.
 
 Unlock the mystical gates, and earn Etherion's favor for the ultimate quest.
 
