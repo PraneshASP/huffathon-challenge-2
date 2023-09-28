@@ -2,11 +2,13 @@
 
 Greetings, Huffoor! This document will guide you through the steps to solve this challenge and register your solution.
 
+**NOTE** -- after you submit, if you want to change your Huff code (for example to try and optimize even more) Please remember to retain your original code that matches the hash! The winner's Huff code will be human reviewed and if it doesn't match the Hash you submitted then it will not count.
+
 ## Overview
 
 In a realm where mystical forces and advanced technology coexist, the **Lost temple of Ethereum** stands as a pinnacle of untold power. Guarded by three sacred gates, the temple's treasures remain a mystery, accessible only to those who prove their worth. The majestic horse **Etherion**, a guardian crafted from Ether itself, watches over these gates. Etherion will only step aside for adventurer who can solve the three divine challenges that bar the way to the temple's inner sanctum by deciphering the hidden logic and implementing them using Huff.
 
-Your mission is simple: solve these challenges with the **least gas cost** to win Etherion's approval, open the sacred gates, and claim the temple's long-hidden treasures. 
+Your mission is simple: solve these challenges with the **least gas cost** to win Etherion's approval, open the sacred gates, and claim the temple's long-hidden treasures.
 
 <br>
 
@@ -52,7 +54,10 @@ Note:
 
 Also note:
 - You can also interact directly with the Optimism [block explorer](https://optimistic.etherscan.io/address/0xf6aE79c0674df852104D214E16AC9c065DAE5896#writeContract). This is not the recommended way due to the danger of human error. If you want to see the exact input parameters you can run the Register script above and DO NOT use a private key.  The arguments will be console.logged for you.
+
 ## Wrapping Up
+
+**!!!Very important** -- after you submit, if you want to change your Huff code (for example to try and optimize even more) Please remember to retain your original code that matches the hash!    The winner's Huff code will be human reviewed and if it doesn't match the Hash you submitted then it will not count.
 
 That's all there is to it! Once the challenge concludes, feel free to make your repository public. If your solution ranks among the top contenders, it will undergo a human review. Stay updated by keeping an eye on our Discord channel and Twitter feed.
 
