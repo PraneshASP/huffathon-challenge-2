@@ -4,15 +4,6 @@ pragma solidity ^0.8.19;
 // ******* This is for use by the challenge creator only!     *******
 // ******* Players do not need to change anything here. *******
 
-/**
- * In a world where gods and blockchain intersect, the legend of Ethereum's Lost Temple captivates all.
- * Guarded by three divine gates, the temple's secrets are accessible only to those fluent in Huff,
- * the language symbolized by the celestial horse, Etherion. Your mission is to decipher the challenges using Huff in the most ether-efficient manner.
- * The adventurer who solves these puzzles with the least etheric essence will unlock the temple's treasures.
- *
- * Unlock the mystical gates, and earn Etherion's favor for the ultimate quest.
- */
-
 /// @dev Challenge interface
 interface ITemple {
     function gate1(uint256 _input) external view returns (uint256 _output);

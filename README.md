@@ -4,15 +4,9 @@ Greetings, Huffoor! This document will guide you through the steps to solve this
 
 ## Overview
 
-_This is where you describe what the challenge is about, for example:_
+In a world where gods and blockchain intersect, the legend of Ethereum's Lost Temple captivates all. Guarded by three divine gates, the temple's secrets are accessible only to those fluent in Huff, the language symbolized by the celestial horse, Etherion. Your mission is to decipher the hidden mystery logic to uinlock 3 sacred gates and implement them using Huff in the most efficient manner. The adventurer who solves these puzzles with the least etheric essence will unlock the temple's treasures.
 
-_"In this challenge you will optimize this contract..."_
-
-_"Write a contract with a function that returns a square root..."_
-
-_"Steal all the ETH from this Vault contract with a contract < 100 bytes..."_
-
-
+Unlock the mystical gates, and earn Etherion's favor for the ultimate quest.
 
 ## Getting Started
 
