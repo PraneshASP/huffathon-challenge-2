@@ -168,7 +168,7 @@ library CREATOR {
         require(ITemple(solution).gate3(2777807724) == 3);
         require(ITemple(solution).gate3(9256723390) == 3);
         require(ITemple(solution).gate3(6) == 0);
-        require(ITemple(solution).gate3(9) == 2);
+        require(ITemple(solution).gate3(100) == 2);
         require(ITemple(solution).gate3(512) == 0);
         require(ITemple(solution).gate3(336) == 1);
         require(ITemple(solution).gate3(83) == 2);
