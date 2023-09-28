@@ -8,6 +8,13 @@ In a world where gods and blockchain intersect, the legend of Ethereum's Lost Te
 
 Unlock the mystical gates, and earn Etherion's favor for the ultimate quest.
 
+<br>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)">
+  <img alt="Lost temple of ethereum png" src="./static/lost-temple.png">
+</picture>
+
 ## Getting Started
 
 1. **Clone the Repo**: Start by cloning this repository to your local machine.
