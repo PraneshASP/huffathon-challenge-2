@@ -8,6 +8,8 @@ Greetings, Huffoor! This document will guide you through the steps to solve this
 
 In a realm where mystical forces and advanced technology coexist, the **Lost temple of Ethereum** stands as a pinnacle of untold power. Guarded by three sacred gates, the temple's treasures remain a mystery, accessible only to those who prove their worth. The majestic horse **Etherion**, a guardian crafted from Ether itself, watches over these gates. Etherion will only step aside for adventurer who can solve the three divine challenges that bar the way to the temple's inner sanctum by deciphering the hidden logic and implementing them using Huff.
 
+To aid you in your quest, Etherion directs your gaze to a [Mystic Oracle](https://temple-gates.vercel.app/). This Oracle serves as a guide, providing the output to various inputs—clues to decipher the riddles of the gates. Use this wisdom wisely to unlock the secrets of the three gates. Visit the oracle [here](https://temple-gates.vercel.app/) to contemplate the patterns and, perhaps, unveil the logic hidden within. 
+
 Your mission is simple: solve these challenges with the **least gas cost** to win Etherion's approval, open the sacred gates, and claim the temple's long-hidden treasures.
 
 <br>

@@ -21,7 +21,9 @@ contract Register is Script, Utils {
         string memory solverHandle_ = playerHandle();
         bytes32 codeHash_ = codeHash();
         uint256 gas_ = gasReport();
-        console.log("Calling register() on HuffCTFRegistry contract 0xf6aE79c0674df852104D214E16AC9c065DAE5896 on Optimism mainnet with args:");
+        console.log(
+            "Calling register() on HuffCTFRegistry contract 0xf6aE79c0674df852104D214E16AC9c065DAE5896 on Optimism mainnet with args:"
+        );
         console.log("challengeId: ");
         console.logBytes(abi.encode(challengeId_));
         console.log("solverHandle: ");

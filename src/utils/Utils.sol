@@ -6,6 +6,7 @@ import "forge-std/Test.sol";
 
 // huff-runner
 import {compileWithVersion, create, EvmVersion} from "huff-runner/Deploy.sol";
+
 using {compileWithVersion} for Vm;
 using {create} for bytes;
 
@@ -34,8 +35,10 @@ contract Utils is Test {
 
     function playerHandle() public returns (string memory PLAYER_HANDLE) {
         PLAYER_HANDLE = vm.envString("PLAYER_HANDLE");
-        require(keccak256(abi.encode(PLAYER_HANDLE)) != keccak256(abi.encode("")), "IMPORTANT: PLAYER to update env var PLAYER_HANDLE");
-
+        require(
+            keccak256(abi.encode(PLAYER_HANDLE)) != keccak256(abi.encode("")),
+            "IMPORTANT: PLAYER to update env var PLAYER_HANDLE"
+        );
     }
 
     // It might be useful for the CREATOR during development to switch the getCreationCode

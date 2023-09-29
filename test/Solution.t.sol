@@ -8,7 +8,6 @@ import {CREATOR} from "../src/utils/CREATOR.sol";
 /// @notice These tests are available to the player to use for debugging/deving their solution.
 /// Any changes here do not have any effects outside this file so feel free to change as you like.
 contract SolutionTest is Test, Utils {
-
     function setUp() public {}
 
     function testchallengeId() public {
