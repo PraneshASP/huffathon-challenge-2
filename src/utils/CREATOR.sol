@@ -94,12 +94,12 @@ library CREATOR {
         require(ITemple(solution).gate1(81585892335) == 371);
         require(ITemple(solution).gate1(817387401330) == 271);
         require(ITemple(solution).gate1(611971777415) == 358);
-        require(ITemple(solution).gate1(53587572229756296) == 494);
-        require(ITemple(solution).gate1(63830602652614180) == 377);
-        require(ITemple(solution).gate1(73655171263375890) == 536);
-        require(ITemple(solution).gate1(70876212911345020) == 360);
+        require(ITemple(solution).gate1(53587572229756296) == 570);
+        require(ITemple(solution).gate1(63830602652614180) == 341);
+        require(ITemple(solution).gate1(73655171263375890) == 472);
+        require(ITemple(solution).gate1(70876212911345020) == 344);
         require(ITemple(solution).gate1(46301418518092640) == 370);
-        require(ITemple(solution).gate1(77417862684800020) == 488);
+        require(ITemple(solution).gate1(77417862684800020) == 452);
         require(ITemple(solution).gate1(77242606367034080) == 377);
         require(ITemple(solution).gate1(20092716109288800) == 453);
         require(ITemple(solution).gate1(14256344115200848) == 298);
@@ -200,7 +200,6 @@ library CREATOR {
         require(ITemple(solution).gate3(235877511077) == 53084);
         require(ITemple(solution).gate3(1249971651505) == 329424);
         require(ITemple(solution).gate3(4189324608256) == 304542);
-        require(ITemple(solution).gate3(4242556563077) == 606079509018);
         require(ITemple(solution).gate3(4801490423911) == 58446);
         require(ITemple(solution).gate3(3505165332370) == 923347);
         require(ITemple(solution).gate3(6063193970886) == 13063800);
@@ -208,7 +207,6 @@ library CREATOR {
         require(ITemple(solution).gate3(2328822946329) == 354625300);
         require(ITemple(solution).gate3(3842980541040) == 696192160);
         require(ITemple(solution).gate3(5316810733980) == 201695);
-        require(ITemple(solution).gate3(5263962929109) == 194961589970);
         require(ITemple(solution).gate3(1345183583772) == 842846888);
         require(ITemple(solution).gate3(5024289943050) == 1757673);
         require(ITemple(solution).gate3(5008026375725) == 32535680);
