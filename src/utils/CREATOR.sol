@@ -144,15 +144,15 @@ library CREATOR {
         require(ITemple(solution).gate2(88457130540295520000) == 3);
         require(ITemple(solution).gate2(12874805640082610000) == 5);
         require(ITemple(solution).gate2(91918994944452360000) == 6);
-        require(ITemple(solution).gate2(76585710778268140000) == 4);
+        require(ITemple(solution).gate2(76585710778268140000) == 5);
         require(ITemple(solution).gate2(35057133011312103000) == 5);
         require(ITemple(solution).gate2(864465437506590600000) == 3);
         require(ITemple(solution).gate2(837568871969353800000) == 3);
         require(ITemple(solution).gate2(617497632838679000000) == 8);
         require(ITemple(solution).gate2(401355765181268500000) == 5);
-        require(ITemple(solution).gate2(256846633470305240000) == 3);
+        require(ITemple(solution).gate2(256846633470305240000) == 13);
         require(ITemple(solution).gate2(160516030345125630000) == 6);
-        require(ITemple(solution).gate2(238503138464875700000) == 3);
+        require(ITemple(solution).gate2(238503138464875700000) == 4);
         require(ITemple(solution).gate2(927933093895385100000) == 4);
         require(ITemple(solution).gate2(180443286288897600000) == 5);
         require(ITemple(solution).gate2(921529073424093300000) == 3);
